@@ -1,11 +1,13 @@
 // Grand Central Station, Main, Vertex, Canon, etc. 
+
+@import "animate.min.css"
 @import "normalize";
 @import "google-homepage";
 
 
 /* Styling */
 body {
-    background: white;
+    background-color: white;
 }
 
 // Stage (Parent)
@@ -20,11 +22,10 @@ body {
   margin-left: 80px;
   text-align: center;
   margin-top: 150px;
-  font-size: 8em;
+  font-size: 7em;
   color: white; 
   position: absolute;
   z-index: 2;
-  font-family: 'Anton', sans-serif;
 }
 
 #stage img {
