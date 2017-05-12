@@ -5,41 +5,55 @@
 
 /* Styling */
 body {
-    background: #e4f8ff;
+    background: white;
 }
 
 // Stage (Parent)
 #stage {
-    position: relative;
-    overflow: hidden;
-}
-
-// Child
-#stage svg {
+    height: 300px;
+    width: 600px;  
+    background: white;
     position: absolute;
-    bottom: 0;
-    right: 0;
 }
 
-// Child
 #stage h1 {
-    position: absolute;
-    top: 40%;
-    left: 40%;
+  margin-left: 80px;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 8em;
+  color: white; 
+  position: absolute;
+  z-index: 2;
+  font-family: 'Anton', sans-serif;
 }
 
-// Animations Go Here
-// First Frame
-#stage h1,
+#stage img {
+  height: 300px;
+  width: 600px;
+ animation: slideInUp 5s; 
+  overflow: hidden;
+}
+
 #stage svg {
-    opacity: 0;
-    transition: opacity 2.5s;    
+  z-index: 4;
+  width: 80px;
+  position: relative;
+  left: 178px;
+  bottom: 113px;
+  animation: fadeIn 7s, 
+    spinning 4s 4s;
+  transition: transform 2s;
+  
 }
 
-// Last Frame
-#stage:hover h1, 
-#stage:hover svg {
-    opacity: 1;
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 
