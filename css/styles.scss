@@ -15,16 +15,15 @@ body {
     height: 300px;
     width: 600px;  
     background: white;
-}
-
-}
+    position: relative;
+    overflow: hidden;
 }
 
 #stage h1 {
-  margin-left: 90px;
+  margin-left: 120px;
   text-align: center;
   margin-top: 150px;
-  font-size: 7em;
+  font-size: 8em;
   color: white; 
   position: absolute;
   z-index: 2;
@@ -39,10 +38,10 @@ body {
 
 #stage svg {
   z-index: 4;
-  width: 70px;
+  width: 65px;
   position: relative;
-  left: 140px;
-  bottom: 113px;
+  left: 15px;
+  bottom: 101px;
   animation: fadeIn 7s, 
     spinning 4s 4s;
 }
