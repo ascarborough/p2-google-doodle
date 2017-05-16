@@ -1,6 +1,6 @@
 // Grand Central Station, Main, Vertex, Canon, etc. 
 
-@import "animate.min.css"
+@import "animate.min.css";
 @import "normalize";
 @import "google-homepage";
 
@@ -15,11 +15,13 @@ body {
     height: 300px;
     width: 600px;  
     background: white;
-    position: absolute;
+}
+}
+}
 }
 
 #stage h1 {
-  margin-left: 80px;
+  margin-left: 90px;
   text-align: center;
   margin-top: 150px;
   font-size: 7em;
@@ -37,9 +39,9 @@ body {
 
 #stage svg {
   z-index: 4;
-  width: 80px;
+  width: 70px;
   position: relative;
-  left: 178px;
+  left: 140px;
   bottom: 113px;
   animation: fadeIn 7s, 
     spinning 4s 4s;
