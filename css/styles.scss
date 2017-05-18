@@ -32,6 +32,10 @@ body {
   z-index: 2;
 }
 
+span {
+    color: transparent;
+}
+
 #stage img {
   height: 300px;
   width: 600px;
@@ -40,13 +44,20 @@ body {
 }
 
 #stage svg {
-  z-index: 4;
-  width: 75px;
+    margin: 1px;
+    z-index: 4;
+  width: 70px;
   position: relative;
-  left: 23px;
+  left: -13px;
   bottom: 106px;
   animation: fadeIn 7s, 
     spinning 4s 4s;
+    transition: transform 1s;
+}
+
+#stage svg:hover {
+  transform: translateY(-25px);
+  transition: transform 1s;
 }
 
 
